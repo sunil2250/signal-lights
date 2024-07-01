@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> welcome to Signal Lights projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Signal Lights Control</h1>
+        <div class="signals">
+            <div class="signal-container">
+                <div id="A" class="signal red"></div>
+                <input type="text" id="seqA" class="seq-input" placeholder="1">
+            </div>
+            <div class="signal-container">
+                <div id="B" class="signal red"></div>
+                <input type="text" id="seqB" class="seq-input" placeholder="2">
+            </div>
+            <div class="signal-container">
+                <div id="C" class="signal red"></div>
+                <input type="text" id="seqC" class="seq-input" placeholder="3">
+            </div>
+            <div class="signal-container">
+                <div id="D" class="signal red"></div>
+                <input type="text" id="seqD" class="seq-input" placeholder="4">
+            </div>
+        </div>
+        <div class="inputs">
+            <div class="input-group">
+                <label for="greenInterval">Green light Intervals (seconds):</label>
+                <input type="text" id="greenInterval" placeholder="e.g., 20">
+            </div>
+            <div class="input-group">
+                <label for="yellowInterval">Yellow light Intervals (seconds):</label>
+                <input type="text" id="yellowInterval" placeholder="e.g., 3">
+            </div>
+            <div class="buttons">
+                <button id="start" class="btn">Start</button>
+                <button id="stop" class="btn">Stop</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
